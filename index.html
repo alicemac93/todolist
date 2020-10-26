@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+    <h1 onclick="cross">To-do List</h1>
+    <h2 id="date" class="date"></h2>
+    <h2>You have <span id="noOfTasks">0</span> tasks to do</h2>
+</div>
+    <input id="newInput" type="text" placeholder="new task">
+    <button id="addNew" class="addButton" type="submit">ADD</button>
+    <div class="tasks">
+    <ul id="myList">
+    </ul>
+</div>
+    <div class="buttons">
+    <button id="deleteAll" class="bottomBtn">Delete All</button>
+    <button id="checkAll" class="bottomBtn">Mark all as done</button>
+    </div>
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
